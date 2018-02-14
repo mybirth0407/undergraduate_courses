@@ -1,0 +1,6 @@
+Duration: 3000
+Periodic Task 1: (12, 20, 5, 20)
+Periodic Task 2: (12, 40, 12, 35)
+Aperiodic Task 3: (57, 5, 20)
+Periodic Task 4: (40, 30, 7, 30)
+Aperiodic Task 5: (1200, 53, 200)

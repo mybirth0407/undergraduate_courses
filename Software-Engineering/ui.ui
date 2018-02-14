@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>916</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Software Enginerring Project -CPU Scheduling Simulator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>381</width>
+      <height>163</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>파일 입력</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="text">
+          <string>RM</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="text">
+          <string>EDF</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="text">
+          <string>USER</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>스케줄링</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>스케줄링 결과 보기</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="text">
+        <string>파일 출력</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Software Engineering Project
+CPU Scheduler Simulator</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>380</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>만든이 성예닮</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>30</y>
+      <width>401</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>도움말이 필요하다면 이 곳을 누르세요.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>916</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHELP">
+    <property name="title">
+     <string>메뉴</string>
+    </property>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+   </widget>
+   <addaction name="menuHELP"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_2">
+   <property name="text">
+    <string>도움말</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>종료</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>만든이 성예닮</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_git()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_SE()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>543</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_InputFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_Scheduling()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>234</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_Show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_OutputFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_RM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>63</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_EDF()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_USER()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>270</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_3</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>310</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>set_click_Help()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>654</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>797</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>set_click_git()</slot>
+  <slot>set_click_SE()</slot>
+  <slot>set_click_InputFile()</slot>
+  <slot>set_click_Scheduling()</slot>
+  <slot>set_click_Show()</slot>
+  <slot>set_click_OutputFile()</slot>
+  <slot>set_click_RM()</slot>
+  <slot>set_click_EDF()</slot>
+  <slot>set_click_USER()</slot>
+  <slot>set_click_Help()</slot>
+ </slots>
+</ui>
